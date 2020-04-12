@@ -46,7 +46,7 @@ class Camera():
         image_files = [
             os.path.join(self.dir, self.name + str(idx) + ".png")
             for idx in self.indexes()]
-        images = map(Image.open, image_files)
+        images = list(map(Image.open, image_files))
         width, height = images[0].size
 
         total_width = width * self.comic_strip
@@ -57,7 +57,7 @@ class Camera():
 
         for i,im in enumerate(images):
             x_offset = (i % self.comic_strip) * width
-            y_offset = (i / self.comic_strip) * height
+            y_offset = (i // self.comic_strip) * height
             # print('offsets',(x_offset,y_offset))
             new_im.paste(im, (x_offset,y_offset))
 

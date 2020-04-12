@@ -5,6 +5,7 @@ from OpenGL.GLU import *
 import matplotlib.cm
 from camera import Camera
 from vectors import *
+from matrices import *
 from math import *
 from transforms import *
 
