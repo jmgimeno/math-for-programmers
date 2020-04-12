@@ -9,6 +9,9 @@ verify_ssl = true
 matplotlib = "*"
 numpy = "*"
 jupyter = "*"
+pyopengl = "*"
+pygame = "*"
+pillow = "*"
 
 [requires]
 python_version = "3.7"
