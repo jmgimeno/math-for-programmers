@@ -10,7 +10,7 @@ matplotlib = "*"
 numpy = "*"
 jupyter = "*"
 pyopengl = "*"
-pygame = "*"
+pygame = "==2.0.0.dev6"
 pillow = "*"
 
 [requires]
