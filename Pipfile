@@ -12,6 +12,7 @@ jupyter = "*"
 pyopengl = "*"
 pygame = "==2.0.0.dev6"
 pillow = "*"
+sympy = "*"
 
 [requires]
 python_version = "3.7"
